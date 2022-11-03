@@ -13,7 +13,6 @@
   "files.exclude": {
     "**/*.pyc": true
   },
-  "javascript.validate.enable": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.guides.bracketPairs": "active",
   "redhat.telemetry.enabled": false,
