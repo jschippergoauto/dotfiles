@@ -1,0 +1,27 @@
+{
+  "workbench.colorTheme": "Default High Contrast",
+  "editor.renderWhitespace": "all",
+  "editor.fontFamily": "'Hack Nerd Font Mono', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.formatOnSave": true,
+  "editor.rulers": [80],
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#e4d5094f",
+    "editorIndentGuide.background": "#444444"
+  },
+  "workbench.editor.enablePreview": false,
+  "bookmarks.navigateThroughAllFiles": false,
+  "files.exclude": {
+    "**/*.pyc": true
+  },
+  "javascript.validate.enable": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.guides.bracketPairs": "active",
+  "redhat.telemetry.enabled": false,
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "python.formatting.provider": "black",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  }
+}
