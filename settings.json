@@ -22,5 +22,6 @@
   "python.formatting.provider": "black",
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
-  }
+  },
+  "editor.fontSize": 12
 }
