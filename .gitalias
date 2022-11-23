@@ -1,0 +1,13 @@
+# Include this in your .gitconfig file like this:
+#[config]
+#path = .gitalias
+
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	pu = push -u origin HEAD
+	rl = reflog
+	pdiff = diff HEAD@{1} HEAD
+	ddiff = diff development
