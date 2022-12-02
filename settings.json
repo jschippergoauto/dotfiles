@@ -1,43 +1,48 @@
 {
-  "workbench.colorTheme": "Default High Contrast",
-  "editor.renderWhitespace": "all",
-  "editor.fontFamily": "'Hack Nerd Font Mono', 'Droid Sans Mono', 'monospace', monospace",
-  "editor.formatOnSave": true,
-  "editor.rulers": [80],
-  "workbench.colorCustomizations": {
-    "editorRuler.foreground": "#e4d5094f",
-    "editorIndentGuide.background": "#444444"
-  },
-  "workbench.editor.enablePreview": false,
-  "bookmarks.navigateThroughAllFiles": false,
-  "files.exclude": {
-    "**/*.pyc": true
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.guides.bracketPairs": "active",
-  "redhat.telemetry.enabled": false,
-  "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
-  },
-  "python.formatting.provider": "black",
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python",
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-    }
-  },
-  "editor.fontSize": 12,
-  "editor.minimap.enabled": false,
-  "editor.scrollbar.verticalScrollbarSize": 28,
-  "editor.cursorSurroundingLines": 5,
-  "workbench.editor.wrapTabs": true,
-  "workbench.editor.titleScrollbarSizing": "large",
-  "outline.collapseItems": "alwaysCollapse",
-  "workbench.sash.hoverDelay": 100,
-  "workbench.sash.size": 8,
-  "editor.guides.highlightActiveIndentation": "always",
-  "search.showLineNumbers": true,
-  "search.decorations.badges": false,
-  "search.searchEditor.reusePriorSearchConfiguration": true,
-  "isort.args": ["--profile", "black"]
+   "[python]" : {
+      "editor.codeActionsOnSave" : {
+         "source.organizeImports" : true
+      },
+      "editor.defaultFormatter" : "ms-python.python"
+   },
+   "[xml]" : {
+      "editor.defaultFormatter" : "redhat.vscode-xml"
+   },
+   "bookmarks.navigateThroughAllFiles" : false,
+   "editor.cursorSurroundingLines" : 5,
+   "editor.defaultFormatter" : "esbenp.prettier-vscode",
+   "editor.fontFamily" : "'Hack Nerd Font Mono', 'Droid Sans Mono', 'monospace', monospace",
+   "editor.fontSize" : 12,
+   "editor.formatOnSave" : true,
+   "editor.guides.bracketPairs" : "active",
+   "editor.guides.highlightActiveIndentation" : "always",
+   "editor.minimap.enabled" : false,
+   "editor.renderWhitespace" : "all",
+   "editor.rulers" : [
+      80
+   ],
+   "editor.scrollbar.verticalScrollbarSize" : 28,
+   "files.exclude" : {
+      "**/*.pyc" : true
+   },
+   "isort.args" : [
+      "--profile",
+      "black"
+   ],
+   "outline.collapseItems" : "alwaysCollapse",
+   "python.formatting.provider" : "black",
+   "redhat.telemetry.enabled" : false,
+   "search.decorations.badges" : false,
+   "search.searchEditor.reusePriorSearchConfiguration" : true,
+   "search.showLineNumbers" : true,
+   "workbench.colorCustomizations" : {
+      "editorIndentGuide.background" : "#444444",
+      "editorRuler.foreground" : "#e4d5094f"
+   },
+   "workbench.colorTheme" : "Default High Contrast",
+   "workbench.editor.enablePreview" : false,
+   "workbench.editor.titleScrollbarSizing" : "large",
+   "workbench.editor.wrapTabs" : true,
+   "workbench.sash.hoverDelay" : 100,
+   "workbench.sash.size" : 8
 }
