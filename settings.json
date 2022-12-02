@@ -21,7 +21,23 @@
   },
   "python.formatting.provider": "black",
   "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
   },
-  "editor.fontSize": 12
+  "editor.fontSize": 12,
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.verticalScrollbarSize": 28,
+  "editor.cursorSurroundingLines": 5,
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.titleScrollbarSizing": "large",
+  "outline.collapseItems": "alwaysCollapse",
+  "workbench.sash.hoverDelay": 100,
+  "workbench.sash.size": 8,
+  "editor.guides.highlightActiveIndentation": "always",
+  "search.showLineNumbers": true,
+  "search.decorations.badges": false,
+  "search.searchEditor.reusePriorSearchConfiguration": true,
+  "isort.args": ["--profile", "black"]
 }
