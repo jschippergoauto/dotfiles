@@ -6,8 +6,9 @@
 	co = checkout
 	br = branch
 	ci = commit
-	st = status
+	st = status -s
 	pu = push -u origin HEAD
 	rl = reflog
+	lo = log --graph
 	pdiff = diff HEAD@{1} HEAD
-	ddiff = diff development
+	ddiff = diff development...HEAD
