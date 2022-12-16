@@ -1,48 +1,115 @@
 {
-   "[python]" : {
-      "editor.codeActionsOnSave" : {
-         "source.organizeImports" : true
-      },
-      "editor.defaultFormatter" : "ms-python.python"
-   },
-   "[xml]" : {
-      "editor.defaultFormatter" : "redhat.vscode-xml"
-   },
-   "bookmarks.navigateThroughAllFiles" : false,
-   "editor.cursorSurroundingLines" : 5,
-   "editor.defaultFormatter" : "esbenp.prettier-vscode",
-   "editor.fontFamily" : "'Hack Nerd Font Mono', 'Droid Sans Mono', 'monospace', monospace",
-   "editor.fontSize" : 12,
-   "editor.formatOnSave" : true,
-   "editor.guides.bracketPairs" : "active",
-   "editor.guides.highlightActiveIndentation" : "always",
-   "editor.minimap.enabled" : false,
-   "editor.renderWhitespace" : "all",
-   "editor.rulers" : [
-      80
-   ],
-   "editor.scrollbar.verticalScrollbarSize" : 28,
-   "files.exclude" : {
-      "**/*.pyc" : true
-   },
-   "isort.args" : [
-      "--profile",
-      "black"
-   ],
-   "outline.collapseItems" : "alwaysCollapse",
-   "python.formatting.provider" : "black",
-   "redhat.telemetry.enabled" : false,
-   "search.decorations.badges" : false,
-   "search.searchEditor.reusePriorSearchConfiguration" : true,
-   "search.showLineNumbers" : true,
-   "workbench.colorCustomizations" : {
-      "editorIndentGuide.background" : "#444444",
-      "editorRuler.foreground" : "#e4d5094f"
-   },
-   "workbench.colorTheme" : "Default High Contrast",
-   "workbench.editor.enablePreview" : false,
-   "workbench.editor.titleScrollbarSizing" : "large",
-   "workbench.editor.wrapTabs" : true,
-   "workbench.sash.hoverDelay" : 100,
-   "workbench.sash.size" : 8
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.addMissingImports": true,
+      "source.sortImports": true
+    }
+  },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "atlascode.bitbucket.enabled": false,
+  "atlascode.jira.jqlList": [
+    {
+      "enabled": false,
+      "id": "c0eb30c1-136c-451e-aff6-bbbe560d70bb",
+      "monitor": true,
+      "name": "My goautodev Issues",
+      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+      "siteId": "872addcc-298c-4ca8-9b88-c4a7a8b309b0"
+    },
+    {
+      "enabled": true,
+      "id": "b18e0cc5-3397-4de8-9d47-f153a28a42f1",
+      "monitor": true,
+      "name": "Todo",
+      "query": "assignee = currentUser() AND resolution = Unresolved and status in (Backlog,Open) ORDER BY lastViewed DESC",
+      "siteId": "872addcc-298c-4ca8-9b88-c4a7a8b309b0"
+    },
+    {
+      "enabled": true,
+      "id": "7a6730aa-31a2-4fd3-b04d-06fea71f9169",
+      "monitor": true,
+      "name": "Working",
+      "query": "assignee = currentUser() AND resolution = Unresolved and status in (\"In Progress\",Integration) ORDER BY lastViewed DESC",
+      "siteId": "872addcc-298c-4ca8-9b88-c4a7a8b309b0"
+    },
+    {
+      "enabled": true,
+      "id": "ba65a63a-4b93-4f92-b6b8-a3cde89979ec",
+      "monitor": true,
+      "name": "Testing",
+      "query": "assignee = currentUser() AND resolution = Unresolved and status in (\"In Code Review\",\"Testing Functionality\") ORDER BY lastViewed DESC",
+      "siteId": "872addcc-298c-4ca8-9b88-c4a7a8b309b0"
+    },
+    {
+      "enabled": true,
+      "id": "311d6f79-ab64-4752-b1c4-ac37889c2191",
+      "monitor": true,
+      "name": "Everything else",
+      "query": "assignee = currentUser() AND resolution = Unresolved and status not in (Backlog,Open,\"In Progress\",Integration,\"In Code Review\",\"Testing Functionality\") ORDER BY lastViewed DESC",
+      "siteId": "872addcc-298c-4ca8-9b88-c4a7a8b309b0"
+    }
+  ],
+  "atlascode.jira.startWorkBranchTemplate.customTemplate": "{{{issueKey}}}",
+  "atlascode.jira.todoIssues.enabled": false,
+  "bookmarks.navigateThroughAllFiles": false,
+  "editor.cursorSurroundingLines": 5,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'Hack Nerd Font Mono', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontSize": 12,
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.highlightActiveIndentation": "always",
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [80],
+  "editor.scrollbar.verticalScrollbarSize": 28,
+  "files.exclude": {
+    "**/*.pyc": true
+  },
+  "git.autofetch": true,
+  "githubPullRequests.queries": [
+    {
+      "label": "Waiting For My Review",
+      "query": "is:open review-requested:${user}"
+    },
+    {
+      "label": "Assigned To Me",
+      "query": "is:open assignee:${user}"
+    },
+    {
+      "label": "Created By Me",
+      "query": "is:open author:${user}"
+    }
+  ],
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.sortContributorsBy": "date:desc",
+  "isort.args": ["--profile", "black"],
+  "markdown.styles": [
+    "https://use.fontawesome.com/releases/v6.2.1/css/all.css"
+  ],
+  "markdown.validate.enabled": true,
+  "outline.collapseItems": "alwaysCollapse",
+  "python.formatting.provider": "black",
+  "redhat.telemetry.enabled": false,
+  "search.decorations.badges": false,
+  "search.searchEditor.reusePriorSearchConfiguration": true,
+  "search.showLineNumbers": true,
+  "workbench.colorCustomizations": {
+    "editorIndentGuide.background": "#444444",
+    "editorRuler.foreground": "#e4d5094f"
+  },
+  "workbench.colorTheme": "Default High Contrast",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.titleScrollbarSizing": "large",
+  "workbench.editor.wrapTabs": true,
+  "workbench.sash.hoverDelay": 100,
+  "workbench.sash.size": 8
 }
