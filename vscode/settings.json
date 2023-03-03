@@ -1,9 +1,9 @@
 {
-  "[javascriptreact]": {
-    "editor.codeActionsOnSave": {
-      "source.addMissingImports": true,
-      "source.sortImports": true
-    }
+  "[dockercompose]": {
+    "editor.tabSize": 2
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
   },
   "[python]": {
     "editor.codeActionsOnSave": {
@@ -14,51 +14,6 @@
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
-  "atlascode.bitbucket.enabled": false,
-  "atlascode.jira.jqlList": [
-    {
-      "enabled": false,
-      "id": "c0eb30c1-136c-451e-aff6-bbbe560d70bb",
-      "monitor": true,
-      "name": "My goautodev Issues",
-      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
-      "siteId": "872addcc-298c-4ca8-9b88-c4a7a8b309b0"
-    },
-    {
-      "enabled": true,
-      "id": "b18e0cc5-3397-4de8-9d47-f153a28a42f1",
-      "monitor": true,
-      "name": "Todo",
-      "query": "assignee = currentUser() AND resolution = Unresolved and status in (Backlog,Open) ORDER BY lastViewed DESC",
-      "siteId": "872addcc-298c-4ca8-9b88-c4a7a8b309b0"
-    },
-    {
-      "enabled": true,
-      "id": "7a6730aa-31a2-4fd3-b04d-06fea71f9169",
-      "monitor": true,
-      "name": "Working",
-      "query": "assignee = currentUser() AND resolution = Unresolved and status in (\"In Progress\",Integration) ORDER BY lastViewed DESC",
-      "siteId": "872addcc-298c-4ca8-9b88-c4a7a8b309b0"
-    },
-    {
-      "enabled": true,
-      "id": "ba65a63a-4b93-4f92-b6b8-a3cde89979ec",
-      "monitor": true,
-      "name": "Testing",
-      "query": "assignee = currentUser() AND resolution = Unresolved and status in (\"In Code Review\",\"Testing Functionality\") ORDER BY lastViewed DESC",
-      "siteId": "872addcc-298c-4ca8-9b88-c4a7a8b309b0"
-    },
-    {
-      "enabled": true,
-      "id": "311d6f79-ab64-4752-b1c4-ac37889c2191",
-      "monitor": true,
-      "name": "Everything else",
-      "query": "assignee = currentUser() AND resolution = Unresolved and status not in (Backlog,Open,\"In Progress\",Integration,\"In Code Review\",\"Testing Functionality\") ORDER BY lastViewed DESC",
-      "siteId": "872addcc-298c-4ca8-9b88-c4a7a8b309b0"
-    }
-  ],
-  "atlascode.jira.startWorkBranchTemplate.customTemplate": "{{{issueKey}}}",
-  "atlascode.jira.todoIssues.enabled": false,
   "bookmarks.navigateThroughAllFiles": false,
   "editor.cursorSurroundingLines": 5,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -71,10 +26,34 @@
   "editor.renderWhitespace": "all",
   "editor.rulers": [80],
   "editor.scrollbar.verticalScrollbarSize": 28,
+  // Fixes for Default High Contrast and diff files
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "meta.diff.header.from-file",
+        "settings": {
+          "foreground": "#0088FF"
+        }
+      },
+      {
+        "scope": "meta.diff.header.to-file",
+        "settings": {
+          "foreground": "#0088FF"
+        }
+      },
+      {
+        "scope": "meta.diff.header.git",
+        "settings": {
+          "foreground": "#0088FF"
+        }
+      }
+    ]
+  },
   "files.exclude": {
     "**/*.pyc": true
   },
   "git.autofetch": true,
+  "githubPullRequests.pullBranch": "never",
   "githubPullRequests.queries": [
     {
       "label": "Waiting For My Review",
@@ -89,27 +68,47 @@
       "query": "is:open author:${user}"
     }
   ],
-  "gitlens.hovers.currentLine.over": "line",
-  "gitlens.sortContributorsBy": "date:desc",
   "isort.args": ["--profile", "black"],
+  "markdown.preview.scrollPreviewWithEditor": false,
   "markdown.styles": [
     "https://use.fontawesome.com/releases/v6.2.1/css/all.css"
   ],
   "markdown.validate.enabled": true,
   "outline.collapseItems": "alwaysCollapse",
+  "overtype.paste": true,
+  "python.analysis.typeCheckingMode": "basic",
   "python.formatting.provider": "black",
   "redhat.telemetry.enabled": false,
   "search.decorations.badges": false,
   "search.searchEditor.reusePriorSearchConfiguration": true,
   "search.showLineNumbers": true,
+  "selectby.regexes": {
+    "goToEmptyLine": {
+      "flags": "m",
+      "moveby": "^[\\s()\\[\\]]*$"
+    },
+    "goToNonSpace": {
+      "flags": "m",
+      "moveby": "[^\\s()\\[\\]]"
+    }
+  },
   "workbench.colorCustomizations": {
+    // Nicer colors for diffEditor in Default High Contrast theme
+    "diffEditor.insertedLineBackground": "#33ff2e3f",
+    "diffEditor.insertedTextBackground": "#33ff2e3f",
+    "diffEditor.insertedTextBorder": "#00000000",
+    "diffEditor.removedLineBackground": "#ff008f3f",
+    "diffEditor.removedTextBackground": "#ff008f53",
+    "diffEditor.removedTextBorder": "#00000000",
     "editorIndentGuide.background": "#444444",
     "editorRuler.foreground": "#e4d5094f"
   },
   "workbench.colorTheme": "Default High Contrast",
   "workbench.editor.enablePreview": false,
+  "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.titleScrollbarSizing": "large",
   "workbench.editor.wrapTabs": true,
   "workbench.sash.hoverDelay": 100,
-  "workbench.sash.size": 8
+  "workbench.sash.size": 8,
+  "xml.format.maxLineWidth": 0
 }

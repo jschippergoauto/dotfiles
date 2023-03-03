@@ -39,7 +39,67 @@
     "when": "editorFocus"
   },
   {
+    "key": "ctrl+alt+d",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
     "key": "ctrl+d",
     "command": "editor.action.duplicateSelection"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "-scrollLineUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "-scrollLineDown",
+    "when": "textInputFocus"
+  },
+  {
+    // Move to code block above
+    "key": "ctrl+up",
+    "when": "textInputFocus",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": [
+        {
+          "command": "moveby.regex",
+          "args": ["goToNonSpace", "moveby", "prev", "start"]
+        },
+        {
+          "command": "moveby.regex",
+          "args": ["goToEmptyLine", "moveby", "prev", "start"]
+        },
+        {
+          "command": "moveby.regex",
+          "args": ["goToNonSpace", "moveby", "next", "start"]
+        }
+      ]
+    }
+  },
+  {
+    // Move to code block below
+    "key": "ctrl+down",
+    "when": "textInputFocus",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": [
+        {
+          "command": "moveby.regex",
+          "args": ["goToEmptyLine", "moveby", "next", "start"]
+        },
+        {
+          "command": "moveby.regex",
+          "args": ["goToNonSpace", "moveby", "next", "start"]
+        }
+      ]
+    }
+  },
+  {
+    "key": "ctrl+alt+/",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]
