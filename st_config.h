@@ -96,29 +96,29 @@ char *termname = "xterm-256color";
  */
 unsigned int tabspaces = 8;
 
-/* gnometerm @ http://terminal.sexy */
+/* phrak1/gnometerm/grandshell combo @ http://terminal.sexy */
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 
   /* 8 normal colors */
   [0] = "#000000", /* black   */
-  [1] = "#cc0000", /* red     */
-  [2] = "#4e9a06", /* green   */
-  [3] = "#c4a000", /* yellow  */
+  [1] = "#a80000", /* red     */
+  [2] = "#00a800", /* green   */
+  [3] = "#a85400", /* yellow  */
   [4] = "#3465a4", /* blue    */
-  [5] = "#75507b", /* magenta */
-  [6] = "#06989a", /* cyan    */
-  [7] = "#d3d7cf", /* white   */
+  [5] = "#c350ff", /* magenta */
+  [6] = "#00a8a8", /* cyan    */
+  [7] = "#a8a8a8", /* white   */
 
   /* 8 bright colors */
-  [8]  = "#555753", /* black   */
-  [9]  = "#ef2929", /* red     */
-  [10] = "#8ae234", /* green   */
-  [11] = "#fce94f", /* yellow  */
+  [8]  = "#545054", /* black   */
+  [9]  = "#f85450", /* red     */
+  [10] = "#50fc50", /* green   */
+  [11] = "#f8fc50", /* yellow  */
   [12] = "#729fcf", /* blue    */
-  [13] = "#ad7fa8", /* magenta */
-  [14] = "#34e2e2", /* cyan    */
-  [15] = "#eeeeec", /* white   */
+  [13] = "#f09fff", /* magenta */
+  [14] = "#50fcf8", /* cyan    */
+  [15] = "#f8fcf8", /* white   */
 
   /* special colors */
   [256] = "#000000", /* background */
@@ -127,10 +127,10 @@ static const char *colorname[] = {
 
 /*
  * Default colors (colorname index)
- * foreground, background, cursor
+ * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
 unsigned int defaultcs = 257;
 static unsigned int defaultrcs = 256;
 
