@@ -9,7 +9,8 @@
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
     },
-    "editor.defaultFormatter": "ms-python.python"
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnType": true
   },
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
