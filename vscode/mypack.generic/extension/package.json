@@ -1,0 +1,24 @@
+{
+  "publisher": "mypack",
+  "name": "generic",
+  "displayName": "generic pack",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "alefragnani.Bookmarks",
+    "donjayamanne.githistory",
+    "DrMerfy.overtype",
+    "golang.go",
+    "redhat.vscode-xml",
+    "redhat.vscode-yaml",
+    "rioj7.select-by",
+    "ryuta46.multi-command",
+    "usernamehw.errorlens"
+  ]
+}

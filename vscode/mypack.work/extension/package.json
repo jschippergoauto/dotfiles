@@ -1,0 +1,37 @@
+{
+  "publisher": "mypack",
+  "name": "work",
+  "displayName": "work pack",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "mypack.generic",
+    "aaron-bond.better-comments",
+    "bierner.markdown-mermaid",
+    "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+    "debens.sort-js-object",
+    "doggy8088.quicktype-refresh",
+    "dsznajder.es7-react-js-snippets",
+    "esbenp.prettier-vscode",
+    "firefox-devtools.vscode-firefox-debug",
+    "GitHub.github-vscode-theme",
+    "GitHub.vscode-pull-request-github",
+    "KevinRose.vsc-python-indent",
+    "ms-azuretools.vscode-docker",
+    "ms-python.isort",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "njpwerner.autodocstring",
+    "oouo-diogo-perdigao.docthis",
+    "orsenkucher.vscode-graphql",
+    "rangav.vscode-thunder-client",
+    "ritwickdey.LiveServer",
+    "wix.glean"
+  ]
+}
