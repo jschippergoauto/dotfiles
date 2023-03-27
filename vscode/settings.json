@@ -92,6 +92,7 @@
       "moveby": "[^\\s()\\[\\]]"
     }
   },
+  "thunder-client.saveRequestOnSend": false,
   "workbench.colorCustomizations": {
     // Nicer colors for diffEditor in Default High Contrast theme
     "diffEditor.insertedLineBackground": "#33ff2e3f",

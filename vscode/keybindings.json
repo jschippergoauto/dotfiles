@@ -101,5 +101,9 @@
     "key": "ctrl+alt+/",
     "command": "editor.action.blockComment",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+tab",
+    "command": "workbench.action.focusNextGroup"
   }
 ]
