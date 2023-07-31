@@ -9,13 +9,14 @@
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
     },
-    "editor.defaultFormatter": "ms-python.python",
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnType": true
   },
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
   "bookmarks.navigateThroughAllFiles": false,
+  "docthis.dateTagFormat": "yyyy-mm-dd",
   "editor.cursorSurroundingLines": 5,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "'Hack Nerd Font Mono', 'Droid Sans Mono', 'monospace', monospace",
@@ -51,8 +52,10 @@
     ]
   },
   "files.exclude": {
-    "**/*.pyc": true
+    "**/*.pyc": true,
+    "**/__pycache__": true
   },
+  "files.insertFinalNewline": true,
   "git.autofetch": true,
   "githubPullRequests.pullBranch": "never",
   "githubPullRequests.queries": [
@@ -77,9 +80,22 @@
   "markdown.validate.enabled": true,
   "outline.collapseItems": "alwaysCollapse",
   "overtype.paste": true,
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingImports": "none",
+    "reportMissingModuleSource": "none"
+  },
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
   "python.analysis.typeCheckingMode": "basic",
   "python.formatting.provider": "black",
+  "python.languageServer": "Pylance",
   "redhat.telemetry.enabled": false,
+  // "ruff.args": ["--select=E,F,W,C,N,D,UP", "--verbose"]
+  "ruff.args": ["--config=~/dotfiles/ruff.toml"],
+  "ruff.organizeImports": false,
   "search.decorations.badges": false,
   "search.searchEditor.reusePriorSearchConfiguration": true,
   "search.showLineNumbers": true,
@@ -93,6 +109,10 @@
       "moveby": "[^\\s()\\[\\]]"
     }
   },
+  "sqltools.connections": [],
+  "sqltools.results.limit": 250,
+  "sqltools.results.location": "current",
+  "telemetry.telemetryLevel": "off",
   "thunder-client.saveRequestOnSend": false,
   "workbench.colorCustomizations": {
     // Nicer colors for diffEditor in Default High Contrast theme
@@ -106,7 +126,6 @@
     "editorRuler.foreground": "#e4d5094f"
   },
   "workbench.colorTheme": "Default High Contrast",
-  "workbench.editor.enablePreview": false,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.titleScrollbarSizing": "large",
   "workbench.editor.wrapTabs": true,
