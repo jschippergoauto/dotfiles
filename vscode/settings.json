@@ -93,7 +93,6 @@
   "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
   "redhat.telemetry.enabled": false,
-  // "ruff.args": ["--select=E,F,W,C,N,D,UP", "--verbose"]
   "ruff.args": ["--config=~/dotfiles/ruff.toml"],
   "ruff.organizeImports": false,
   "search.decorations.badges": false,
