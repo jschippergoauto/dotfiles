@@ -90,7 +90,7 @@
   "python.analysis.inlayHints.pytestParameters": true,
   "python.analysis.inlayHints.variableTypes": true,
   "python.analysis.typeCheckingMode": "basic",
-  "python.formatting.provider": "black",
+  "python.formatting.provider": "none",
   "python.languageServer": "Pylance",
   "redhat.telemetry.enabled": false,
   "ruff.args": ["--config=~/dotfiles/ruff.toml"],
