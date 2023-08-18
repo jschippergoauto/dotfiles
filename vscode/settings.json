@@ -121,7 +121,7 @@
     "diffEditor.removedLineBackground": "#ff008f3f",
     "diffEditor.removedTextBackground": "#ff008f53",
     "diffEditor.removedTextBorder": "#00000000",
-    "editorIndentGuide.background": "#444444",
+    "editorIndentGuide.background1": "#444444",
     "editorRuler.foreground": "#e4d5094f"
   },
   "workbench.colorTheme": "Default High Contrast",
