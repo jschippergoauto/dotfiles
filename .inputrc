@@ -1,3 +1,8 @@
 set colored-completion-prefix on
 set colored-stats on
 set show-all-if-ambiguous on
+set enable-keypad on
+
+$if term=st
+"\C-H": backward-kill-word
+$endif
