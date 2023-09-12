@@ -3,7 +3,7 @@
 /* appearance */
 static const char font[]        = "Hack Nerd Font Mono:size=7:antialias=true:autohint=true";
 static const char* normbgcolor  = "#000000";
-static const char* normfgcolor  = "#4e9a06";
+static const char* normfgcolor  = "#666666";
 static const char* selbgcolor   = "#4e9a06";
 static const char* selfgcolor   = "#000000";
 static const char* urgbgcolor   = "#111111";
