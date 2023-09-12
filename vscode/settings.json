@@ -15,6 +15,7 @@
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
+  "autoDocstring.docstringFormat": "google-notypes",
   "bookmarks.navigateThroughAllFiles": false,
   "docthis.dateTagFormat": "yyyy-mm-dd",
   "editor.cursorSurroundingLines": 5,
@@ -112,6 +113,7 @@
   "sqltools.results.limit": 250,
   "sqltools.results.location": "current",
   "telemetry.telemetryLevel": "off",
+  "terminal.integrated.hideOnStartup": "whenEmpty",
   "thunder-client.saveRequestOnSend": false,
   "workbench.colorCustomizations": {
     // Nicer colors for diffEditor in Default High Contrast theme
@@ -121,6 +123,7 @@
     "diffEditor.removedLineBackground": "#ff008f3f",
     "diffEditor.removedTextBackground": "#ff008f53",
     "diffEditor.removedTextBorder": "#00000000",
+    "editor.lineHighlightBackground": "#f3851853",
     "editorIndentGuide.background1": "#444444",
     "editorRuler.foreground": "#e4d5094f"
   },
