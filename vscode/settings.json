@@ -91,10 +91,9 @@
   "python.analysis.inlayHints.pytestParameters": true,
   "python.analysis.inlayHints.variableTypes": true,
   "python.analysis.typeCheckingMode": "basic",
-  "python.formatting.provider": "none",
   "python.languageServer": "Pylance",
   "redhat.telemetry.enabled": false,
-  "ruff.args": ["--config=~/dotfiles/ruff.toml"],
+  "ruff.lint.args": ["--config=~/dotfiles/ruff.toml"],
   "ruff.organizeImports": false,
   "search.decorations.badges": false,
   "search.searchEditor.reusePriorSearchConfiguration": true,
@@ -133,5 +132,6 @@
   "workbench.editor.wrapTabs": true,
   "workbench.sash.hoverDelay": 100,
   "workbench.sash.size": 8,
-  "xml.format.maxLineWidth": 0
+  "xml.format.maxLineWidth": 0,
+  "window.density.editorTabHeight": "compact"
 }
