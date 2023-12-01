@@ -14,6 +14,9 @@ ignore = [
   "N818",   # Exceptions without -Error suffix
   "S101",   # flake8-bandit: assert
   "TRY003", # raise-vanilla-args
+  "FBT001", # boolean-type-hint-positional-argument
+  "FBT002", # boolean-default-value-positional-argument
+  "EM101",  # raw-string-in-exception, we like raw
 ]
 
 target-version = "py311" # min=py37
