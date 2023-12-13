@@ -1,3 +1,11 @@
+# Same as Black.
+line-length = 88
+indent-width = 4
+
+target-version = "py311" # min=py37
+
+
+[lint]
 select = [
   "ALL",
 ]
@@ -17,10 +25,11 @@ ignore = [
   "FBT001", # boolean-type-hint-positional-argument
   "FBT002", # boolean-default-value-positional-argument
   "EM101",  # raw-string-in-exception, we like raw
+  "UP038",  # non-pep604-isinstance, we want more performance
 ]
 
-target-version = "py311" # min=py37
-
+[lint.per-file-ignores]
+"**/tests/*" = ["D", "ANN201", "PLR0913"]
 
 [pydocstyle]
 convention = "google"
