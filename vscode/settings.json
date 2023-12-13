@@ -114,6 +114,8 @@
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.hideOnStartup": "whenEmpty",
   "thunder-client.saveRequestOnSend": false,
+  "window.density.editorTabHeight": "compact",
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${profileName}${separator}${appName}",
   "workbench.colorCustomizations": {
     // Nicer colors for diffEditor in Default High Contrast theme
     "diffEditor.insertedLineBackground": "#33ff2e3f",
@@ -122,16 +124,17 @@
     "diffEditor.removedLineBackground": "#ff008f3f",
     "diffEditor.removedTextBackground": "#ff008f53",
     "diffEditor.removedTextBorder": "#00000000",
+    "editor.background": "#000000",
     "editor.lineHighlightBackground": "#f3851853",
     "editorIndentGuide.background1": "#444444",
-    "editorRuler.foreground": "#e4d5094f"
+    "editorRuler.foreground": "#e4d5094f",
+    "editorWhitespace.foreground": "#7c7c7c"
   },
-  "workbench.colorTheme": "Default High Contrast",
   "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.showTabs": "none",
   "workbench.editor.titleScrollbarSizing": "large",
   "workbench.editor.wrapTabs": true,
   "workbench.sash.hoverDelay": 100,
   "workbench.sash.size": 8,
-  "xml.format.maxLineWidth": 0,
-  "window.density.editorTabHeight": "compact"
+  "xml.format.maxLineWidth": 0
 }
