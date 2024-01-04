@@ -1,0 +1,12 @@
+[include]
+	path = alias
+	path = user
+
+[push]
+	autoSetupRemote = true
+
+[log]
+	date = iso-local
+
+[core]
+	hooksPath = ~/.config/git/hooks

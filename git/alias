@@ -1,0 +1,11 @@
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status -s
+	pu = push -u origin HEAD
+	rl = reflog
+	lo = log --graph
+	pdiff = diff HEAD@{1} HEAD
+	ddiff = diff development...HEAD
+	branch-clean-local = "!f(){ [ -z "$1" ] && echo "Usage: git branch-clean-local BRANCH_NAME" && exit; git branch --merged $1 | grep '^  ' | grep -vE ' (master|development)$' | xargs -r git branch -d; }; f"
