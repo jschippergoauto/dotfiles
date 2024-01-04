@@ -1,6 +1,6 @@
 #!/bin/sh
 hook=$(basename $0)
-git_dir=$(git rev-parse --path-format=absolute --git-dir)
+git_dir=$(git rev-parse --path-format=absolute --git-common-dir)
 
 [ ! -x "$git_dir/hooks/$hook" ] && exit 0
 
