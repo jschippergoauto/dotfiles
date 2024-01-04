@@ -6,3 +6,6 @@ set enable-keypad on
 $if term=st
 "\C-H": backward-kill-word
 $endif
+$if term=screen
+"\C-H": backward-kill-word
+$endif
