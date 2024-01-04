@@ -11,20 +11,21 @@ select = [
 ]
 
 ignore = [
-  "I",      # isort
-  "TD",     # flake8-todos
-  "FIX",    # flake8-fixme
   "ANN002", # missing-type-args
   "ANN003", # missing-type-kwargs
   "ANN101", # missing-type-self
   "D100",   # undocumented-public-module
   "E501",   # Line too long
-  "N818",   # Exceptions without -Error suffix
-  "S101",   # flake8-bandit: assert
-  "TRY003", # raise-vanilla-args
+  "EM101",  # raw-string-in-exception, we like raw
+  "EM102",  # f-string-in-exception
   "FBT001", # boolean-type-hint-positional-argument
   "FBT002", # boolean-default-value-positional-argument
-  "EM101",  # raw-string-in-exception, we like raw
+  "FIX",    # flake8-fixme
+  "I",      # isort
+  "N818",   # Exceptions without -Error suffix
+  "S101",   # flake8-bandit: assert
+  "TD",     # flake8-todos
+  "TRY003", # raise-vanilla-args
   "UP038",  # non-pep604-isinstance, we want more performance
 ]
 
