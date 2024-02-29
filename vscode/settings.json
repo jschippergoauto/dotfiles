@@ -7,7 +7,7 @@
   },
   "[python]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     },
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnType": true
@@ -17,6 +17,7 @@
   },
   "autoDocstring.docstringFormat": "google-notypes",
   "bookmarks.navigateThroughAllFiles": false,
+  "diffEditor.ignoreTrimWhitespace": false,
   "docthis.dateTagFormat": "yyyy-mm-dd",
   "editor.cursorSurroundingLines": 5,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -73,6 +74,7 @@
       "query": "is:open author:${user}"
     }
   ],
+  "go.inlayHints.assignVariableTypes": true,
   "isort.args": ["--profile", "black"],
   "markdown.preview.scrollPreviewWithEditor": false,
   "markdown.styles": [
