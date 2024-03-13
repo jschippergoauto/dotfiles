@@ -42,6 +42,8 @@ alias ls='exa --icons --binary --time-style=long-iso'
 alias nano='nano -w'
 alias grep='grep --color=auto'
 
+export PATH=$HOME/.local/share/bob/nvim-bin/:$HOME/.cargo/bin:$HOME/go/bin:$PATH
+
 set_window_title(){
     local CWD=$(pwd | sed "s|^$HOME|~|")
     echo -ne "\033]0;$CWD $USER@$HOSTNAME\007"
