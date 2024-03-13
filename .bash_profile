@@ -41,3 +41,10 @@ export XZ_OPT=-T0
 alias ls='exa --icons --binary --time-style=long-iso'
 alias nano='nano -w'
 alias grep='grep --color=auto'
+
+set_window_title(){
+    local CWD=$(pwd | sed "s|^$HOME|~|")
+    echo -ne "\033]0;$CWD $USER@$HOSTNAME\007"
+}
+starship_precmd_user_func="set_window_title"
+eval "$(starship init bash)"
