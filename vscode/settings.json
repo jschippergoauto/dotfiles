@@ -138,5 +138,6 @@
   "workbench.editor.wrapTabs": true,
   "workbench.sash.hoverDelay": 100,
   "workbench.sash.size": 8,
-  "xml.format.maxLineWidth": 0
+  "xml.format.maxLineWidth": 0,
+  "javascript.inlayHints.parameterNames.enabled": "all"
 }
