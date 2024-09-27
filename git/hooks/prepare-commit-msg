@@ -3,12 +3,16 @@ COMMIT_MSG_FILE=$1
 COMMIT_SOURCE=$2
 SHA1=$3
 
-footer=$(git branch --show-current | sed -nr 's/^([A-Z]+-[0-9]+)(\..+)?$/Jira: \1/p')
+append_jira() {
+    footer=$(git branch --show-current | sed -nr 's/^([A-Z]+-[0-9]+)(\..+)?$/Jira: \1/p')
 
-# Lame workaround for VS Code, create template from scratch here:
-# empty summary, empty line, footer (possibly w/ ticket)
-[ ! -z "$footer" ] && sed -i "1 s/^/\n\n$footer/g" "$COMMIT_MSG_FILE"
+    # Lame workaround for VS Code, create template from scratch here:
+    # empty summary, empty line, footer (possibly w/ ticket)
+    [ ! -z "$footer" ] && sed -i "1 s/^/\n\n$footer/g" "$COMMIT_MSG_FILE"
+}
+
+# Don't append the Jira ticket when merging/squashing
+[ "$COMMIT_SOURCE" != "merge" ] && [ "$COMMIT_SOURCE" != "squash" ] && append_jira
 
 d=$(dirname "$0")
 . "$d/run-local-hook"
-
