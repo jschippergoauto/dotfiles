@@ -1,11 +1,13 @@
 [alias]
-	co = checkout
 	br = branch
+	branch-clean-local = "!f(){ [ -z "$1" ] && echo "Usage: git branch-clean-local BRANCH_NAME" && exit; git branch --merged $1 | grep '^  ' | grep -vE ' (master|development)$' | xargs -r git branch -d; }; f"
 	ci = commit
-	st = status -s
-	pu = push -u origin HEAD
-	rl = reflog
+	co = checkout
+	ddiff = diff development...HEAD
+	fe = fetch
 	lo = log --graph
 	pdiff = diff HEAD@{1} HEAD
-	ddiff = diff development...HEAD
-	branch-clean-local = "!f(){ [ -z "$1" ] && echo "Usage: git branch-clean-local BRANCH_NAME" && exit; git branch --merged $1 | grep '^  ' | grep -vE ' (master|development)$' | xargs -r git branch -d; }; f"
+	pl = pull
+	pu = push -u origin HEAD
+	rl = reflog
+	st = status -s
