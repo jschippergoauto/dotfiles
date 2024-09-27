@@ -1,3 +1,4 @@
+.git/
 devdata/
 .vscode/
 .pytest_cache/
