@@ -10,3 +10,5 @@
 
 [core]
 	hooksPath = ~/.config/git/hooks
+[rerere]
+	enabled = true
