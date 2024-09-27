@@ -32,5 +32,18 @@ ignore = [
 [lint.per-file-ignores]
 "**/tests/*" = ["D", "ANN201", "PLR0913"]
 
-[pydocstyle]
+[lint.pep8-naming]
+classmethod-decorators = [
+    # Allow Pydantic's `@validator` decorator to trigger class method treatment.
+    "pydantic.validator",
+    # Allow SQLAlchemy's dynamic decorators, like `@field.expression`, to trigger class method treatment.
+    "declared_attr",
+    "expression",
+    "comparator",
+]
+
+[lint.pydocstyle]
 convention = "google"
+
+[format]
+exclude = ["*"]
